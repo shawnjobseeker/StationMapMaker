@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/root">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_view"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentStart="false">
+
+        <include layout="@layout/select_rail_view" />
+    </FrameLayout>
+
+    <org.stationmapmaker.RailwayGrid
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="40"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/select_view">
+    <!--
+        <org.stationmapmaker.RailwayViewGroup
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <org.stationmapmaker.RailwayLine
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:direction="top_left_curve"
+                app:thickness="5dp" />
+            <org.stationmapmaker.RailwayLine
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:direction="bottom_right_curve"
+                app:color="@color/colorPrimaryDark"
+                app:thickness="5dp" />
+
+        </org.stationmapmaker.RailwayViewGroup>
+      -->
+
+    </org.stationmapmaker.RailwayGrid>
+</RelativeLayout>

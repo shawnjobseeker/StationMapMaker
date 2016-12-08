@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/select_rail"
+    android:orientation="horizontal"
+    android:background="@android:color/white">
+
+    <org.stationmapmaker.RailwayLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:thickness="5dp"
+        android:id="@+id/horizontal"
+        android:visibility="visible" />
+
+    <org.stationmapmaker.RailwayLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="vertical"
+        app:thickness="5dp"
+        android:id="@+id/vertical"
+        android:visibility="visible" />
+    <org.stationmapmaker.RailwayLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="bottom_left_curve"
+        app:thickness="5dp"
+        android:id="@+id/bottom_left"
+        android:visibility="visible" />
+    <org.stationmapmaker.RailwayLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="top_left_curve"
+        app:thickness="5dp"
+        android:id="@+id/top_left"
+        android:visibility="visible" />
+
+    <org.stationmapmaker.RailwayLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="top_right_curve"
+        app:thickness="5dp"
+        android:id="@+id/top_right"
+        android:visibility="visible" />
+
+    <org.stationmapmaker.RailwayLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:direction="bottom_right_curve"
+        app:thickness="5dp"
+        android:id="@+id/bottom_right"
+        android:visibility="visible" />
+</LinearLayout>
