@@ -3,6 +3,7 @@ package org.stationmapmaker;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.support.v4.content.ContextCompat;
@@ -42,8 +43,8 @@ public class RailwayLine extends RailwayView {
         thickness = line.getThickness();
         painter = new Paint(Paint.ANTI_ALIAS_FLAG);
     }
-    public void setDirection(Direction direction) {
-        this.style = direction.ordinal();
+    public void setLineColor(int color) {
+        this.lineColor = color;
     }
     public int getDirection() {
         return style;

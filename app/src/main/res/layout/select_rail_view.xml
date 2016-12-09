@@ -1,8 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
     android:layout_width="match_parent"
+    android:background="@android:color/white">
+<HorizontalScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toStartOf="@+id/color_picker"
+    android:layout_alignParentStart="true">
+    <LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:id="@+id/select_rail"
     android:orientation="horizontal"
@@ -52,4 +61,16 @@
         app:thickness="5dp"
         android:id="@+id/bottom_right"
         android:visibility="visible" />
-</LinearLayout>
+
+    </LinearLayout>
+</HorizontalScrollView>
+    <ImageButton
+        android:layout_height="100px"
+        app:srcCompat="@drawable/color_picker"
+        android:id="@+id/color_picker"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:layout_width="100px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
